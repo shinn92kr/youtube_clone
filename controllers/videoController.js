@@ -11,7 +11,11 @@ export const search = (req, res) => {
 
     // const searchingBy = req.query.term; WORKS
     // console.log(req.query.term); !!WORKS
-    res.render("search", { pageTitle: "Search", searchingBy: searchingBy });
+    res.render("search", {
+        pageTitle: "Search",
+        searchingBy: searchingBy,
+        videos: videos,
+    });
 };
 
 export const upload = (req, res) =>
